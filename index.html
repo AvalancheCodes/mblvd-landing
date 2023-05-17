@@ -127,66 +127,6 @@
       })();
     </script>
 
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
-      import { initializeFirestore } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
-
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-
-      // Your web app's Firebase configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyAgiUohtR0xfZWDOSamyyy2Bwb34984y0g",
-        authDomain: "medicalboulevardinc.firebaseapp.com",
-        projectId: "medicalboulevardinc",
-        storageBucket: "medicalboulevardinc.appspot.com",
-        messagingSenderId: "554078931898",
-        appId: "1:554078931898:web:e6644eb75284d4176f6b83"
-      };
-
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const db = initializeFirestore(app);
-    </script>
-
-    <script type="module">
-      import { addDoc, collection  } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
-
-      const form = document.getElementById('form-register');
-      // Add submit event listener
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const formData = {
-          name: document.getElementById('register-name').value,
-          email: document.getElementById('register-email').value,
-          phone: document.getElementById('register-tel').value,
-        }
-
-
-        addDoc(collection(db, ""), {
-          name: "Tokyo",
-          country: "Japan"
-        });
-
-        // Save the form data to Firestore
-        db.collection('users').add({
-          name: name,
-          email: email,
-          phone: phone
-        })
-          .then((docRef) => {
-            console.log('Document written with ID: ', docRef.id);
-            // Reset the form after successful submission
-            form.reset();
-          })
-          .catch((error) => {
-            console.error('Error adding document: ', error);
-          });
-      });
-    </script>
-
 </head>
 
 <!-- Body-->
@@ -991,21 +931,38 @@
                 <div class="col-lg-5 offset-lg-1 col-md-6 order-md-2 order-1 mb-md-0 mb-4">
                     <h3 class="h6 mb-2 text-uppercase">Leave a request now and get 20% off!</h3>
                     <h2 class="h1 mb-lg-5 pb-md-2">Register for the course</h2>
-                    <form id="form-register" class="needs-validation" novalidate>
+                    <form id="form-register" class="needs-validation">
                         <div class="mb-sm-4 mb-3">
                             <label for="register-name" class="form-label-lg">Full name</label>
-                            <input class="form-control" type="text" id="register-name" placeholder="Your full name"
+                            <input class="form-control" type="text" id="register-name"
+                                   name="name"
+                                   autocomplete="name"
+                                   placeholder="Your full name"
                                    required>
                         </div>
                         <div class="mb-sm-4 mb-3">
                             <label for="register-email" class="form-label-lg">Email</label>
-                            <input class="form-control" type="text" id="register-email" placeholder="Your working email"
+                            <input class="form-control" type="email" id="register-email"
+                                   name="email"
+                                   autocomplete="email"
+                                   placeholder="Your working email"
                                    required>
                         </div>
                         <div class="mb-sm-4 mb-3">
                             <label for="register-tel" class="form-label-lg">Phone</label>
-                            <input class="form-control bg-image-0" type="text" id="register-tel"
-                                   placeholder="Your phone number">
+                            <input class="form-control bg-image-0" type="tel" id="register-tel"
+                                   name="tel"
+                                   autocomplete="tel"
+                                   placeholder="Your phone number"
+                                   required>
+                        </div>
+                        <div class="mb-sm-4 mb-3">
+                            <label for="register-password" class="form-label-lg">Password</label>
+                            <input class="form-control bg-image-0" type="password" id="register-password"
+                                   name="password"
+                                   autocomplete="off"
+                                   placeholder="Password"
+                                   required minlength="6">
                         </div>
                         <div class="pt-2">
                             <button type="submit" class="btn btn-gradient btn-hover-shadow d-block w-100">Join the
@@ -1278,6 +1235,29 @@
     </div>
 </footer>
 
+<!-- Toasts -->
+<div id="toast-container" class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 99999">
+    <div id="toast-register-complete" class="toast align-items-center text-white bg-primary border-0" role="alert"
+         aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                Your form has been submitted successfully.
+            </div>
+            <button type="button" class="btn-close ms-auto me-2" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+    <div id="toast-register-failed" class="toast align-items-center text-white bg-primary border-0" role="alert"
+         aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+
+            </div>
+            <button type="button" class="btn-close ms-auto me-2" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+
+
 <!-- Vendor scripts: js libraries and plugins-->
 <script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="/assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
@@ -1287,5 +1267,85 @@
 
 <!-- Main theme script-->
 <script src="/assets/js/theme.min.js"></script>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import {
+    initializeApp
+  } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+  import {
+    getFirestore,
+    doc,
+    setDoc,
+    Timestamp
+  } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+  import {
+    getAuth,
+    createUserWithEmailAndPassword
+  } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js";
+
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAgiUohtR0xfZWDOSamyyy2Bwb34984y0g",
+    authDomain: "medicalboulevardinc.firebaseapp.com",
+    projectId: "medicalboulevardinc",
+    storageBucket: "medicalboulevardinc.appspot.com",
+    messagingSenderId: "554078931898",
+    appId: "1:554078931898:web:c9d2ba72585dcc306f6b83"
+  };
+
+  window.addEventListener("DOMContentLoaded", async (e) => {
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const auth = getAuth(app)
+
+    const form = document.getElementById('form-register');
+    const btnSubmit = document.querySelector('#form-register button[type="submit"]')
+    const toastOk = new bootstrap.Toast(document.getElementById('toast-register-complete'));
+    const toastError = new bootstrap.Toast(document.getElementById('toast-register-failed'));
+    const setToastError = (text) => {
+      document.querySelector('#toast-register-failed .toast-body').innerHTML = text;
+    }
+
+    // Add submit event listener
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      btnSubmit.setAttribute("disabled", "true");
+      const formData = {
+        name: document.getElementById('register-name').value,
+        email: document.getElementById('register-email').value,
+        phone: document.getElementById('register-tel').value,
+        password: document.getElementById('register-password').value
+      }
+
+      try {
+        const userCredential = await createUserWithEmailAndPassword(auth, formData.email, formData.password)
+        const user = userCredential.user;
+        const uid = user.uid;
+        await setDoc(doc(db, "user-profiles", uid), {
+          createdAt: Timestamp.now(),
+          fullName: formData.name,
+          phone: formData.phone,
+          origin: window.location.origin
+        });
+        form.reset();
+        form.classList.remove('was-validated');
+        toastOk.show();
+      } catch (e) {
+        console.error(e);
+        setToastError(JSON.stringify(e));
+        toastError.show();
+      } finally {
+        btnSubmit.removeAttribute("disabled");
+      }
+    });
+  });
+
+</script>
+
 </body>
 </html>
