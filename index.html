@@ -957,6 +957,32 @@
                                    required>
                         </div>
                         <div class="mb-sm-4 mb-3">
+                            <label class="form-label-lg">Select Date</label>
+                            <div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="register-date-option"
+                                           id="register-date-option-1" value="option1" checked>
+                                    <label class="form-check-label" for="register-date-option-1">
+                                        Default radio
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="register-date-option"
+                                           id="register-date-option-2" value="option2">
+                                    <label class="form-check-label" for="register-date-option-2">
+                                        Second radio
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="register-date-option"
+                                           id="register-date-option-3" value="option3">
+                                    <label class="form-check-label" for="register-date-option-3">
+                                        Disabled radio
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-sm-4 mb-3">
                             <label for="register-password" class="form-label-lg">Password</label>
                             <input class="form-control bg-image-0" type="password" id="register-password"
                                    name="password"
@@ -1319,17 +1345,24 @@
         name: document.getElementById('register-name').value,
         email: document.getElementById('register-email').value,
         phone: document.getElementById('register-tel').value,
-        password: document.getElementById('register-password').value
-      }
+        dateOption: Array.from(document.getElementsByName("register-date-option")).find(r => r.checked).value,
 
+        password: document.getElementById('register-password').value,
+      }
+      // console.log(formData);
+      // return;
       try {
         const userCredential = await createUserWithEmailAndPassword(auth, formData.email, formData.password)
         const user = userCredential.user;
         const uid = user.uid;
         await setDoc(doc(db, "user-profiles", uid), {
           createdAt: Timestamp.now(),
+
           fullName: formData.name,
+          email: formData.email,
           phone: formData.phone,
+          dateOption: formData.dateOption,
+
           origin: window.location.origin
         });
         form.reset();
