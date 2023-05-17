@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Createx | SEO &amp; Marketing Agency - Careers</title>
+
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Createx - Multipurpose Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, creative agency, construction, services, e-commerce, mobile app showcase, multipurpose, shop, ui kit, marketing, seo, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+    <link rel="manifest" href="../assets/img/site.webmanifest">
+    <link rel="mask-icon" color="#5bbad5" href="../assets/img/safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/lightgallery.js/dist/css/lightgallery.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/tiny-slider/dist/tiny-slider.css"/>
+
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../assets/css/demo/seo-agency/theme.min.css">
+
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #787a80;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        background-color: #cfcfd1;
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+    </style>
+
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+    </script>
+  </head>
+
+  <!-- Body-->
+  <body>
+
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+    <!-- Main content-->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper position-relative">
+
+
+      <!-- Navbar -->
+      <!-- Remove .navbar-sticky class to detach .navbar from page scroll -->
+      <header class="header navbar navbar-expand-lg navbar-dark navbar-sticky navbar-floating">
+        <div class="container px-0 px-xl-3">
+          <a class="navbar-brand order-lg-1 me-lg-5 me-0 pe-lg-2" href="index.html">
+            <img class="navbar-brand-static" src="../assets/img/seo-agency/logo-light.svg" alt="Createx Logo" width="130">
+            <img class="navbar-brand-floating" src="../assets/img/seo-agency/logo-dark.svg" alt="Createx Logo" width="130">
+          </a>
+          <div class="d-flex align-items-center order-lg-3">
+            <a class="btn btn-primary d-sm-inline-block d-none ms-4" href="contacts.html">Talk to a human</a>
+            <button class="navbar-toggler ms-1 me-n3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse1" aria-expanded="false">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <nav class="collapse navbar-collapse order-lg-2" id="navbarCollapse1">
+            <ul class="navbar-nav me-auto text-nowrap">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="services.html">Services List</a></li>
+                  <li><a class="dropdown-item" href="services-single.html">Single Service</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Case Studies</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="case-studies.html">Case Studies Grid</a></li>
+                  <li><a class="dropdown-item" href="case-studies-single.html">Single Case Study</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">About us</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="about.html">About</a></li>
+                  <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="blog.html">Blog grid</a></li>
+                  <li><a class="dropdown-item" href="blog-single.html">Single Post</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Contacts</a>
+              </li>
+              <li class="nav-item d-sm-none d-block">
+                <a class="btn btn-sm btn-primary m-3" href="contacts.html">Get consultation</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+
+      <!-- Page title-->
+      <section class="py-md-6 py-5 bg-dark jarallax" data-jarallax data-speed="0.6">
+        <div class="container mt-5 py-lg-4">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-alt breadcrumb-light justify-content-center mb-sm-4">
+              <li class="breadcrumb-item">
+                <a href="index.html">
+                  <i class="ci-home"></i>
+                </a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="about.html">About us</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">Careers at Createx Agency</li>
+            </ol>
+          </nav>
+          <h1 class="display-1 text-center text-light">Careers at Createx Agency</h1>
+          <p class="mx-auto mb-lg-6 mb-sm-5 pb-3 lead text-center text-light opacity-60" style="max-width: 810px;">We’re looking for extraordinary talents! If you're passionate about SEO and digital marketing, we want to hear from you.</p>
+          <div class="d-flex flex-md-row flex-column justify-content-center">
+            <div class="d-flex flex-md-row flex-column align-items-center mb-md-0 mb-4 px-md-0 px-sm-5 px-4 pb-md-0 pb-2 text-md-start text-center">
+              <i class="ci-chat me-md-2 mb-md-0 mb-3 text-primary" style="font-size: 40px;"></i>
+              <div class="ps-md-1">
+                <h6 class="mb-0 fs-sm text-light opacity-60">Talk to us</h6>
+                <a href="mailto:hello@example.com" class="fs-lg text-decoration-none text-light">hello@example.com</a>
+              </div>
+            </div>
+            <span class="divider-vertical divider-light d-md-block d-none mx-5"></span>
+            <div class="d-flex flex-md-row flex-column align-items-center mb-md-0 mb-4 px-md-0 px-sm-5 px-4 pb-md-0 pb-2 text-md-start text-center">
+              <i class="ci-iphone me-md-2 mb-md-0 mb-3 text-primary" style="font-size: 40px;"></i>
+              <div class="ps-md-1">
+                <h6 class="mb-0 fs-sm text-light opacity-60">Call us</h6>
+                <a href="tel:(405)555-0128" class="fs-lg text-decoration-none text-light">(405) 555-0128</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parallax bg -->
+        <div class="jarallax-img bg-repeat-0 bg-dark opacity-50" style="background-image: url(../assets/img/seo-agency/about/careers/page-title-bg.jpg);"></div>
+      </section>
+
+
+      <!-- Page content -->
+      <!-- Vacancies -->
+      <section class="py-lg-6 py-5 bg-secondary bg-repeat-0 bg-position-center-top bg-size-contain" style="background-image: url(../assets/img/seo-agency/shapes/stroke/05.svg)">
+        <div class="container">
+
+          <!-- Accordion -->
+          <div class="accordion" id="accordionVacancies">
+
+            <!-- Item -->
+            <div class="accordion-item mb-0">
+              <h3 class="accordion-header d-flex align-items-center justify-content-between" id="accordionVacanciesHeading-1">
+                <button class="accordion-button border-0" type="button" data-bs-toggle="collapse" data-bs-target="#accordionVacanciesCollapse-1" aria-expanded="true" aria-controls="accordionVacanciesCollapse-1">
+                  Digital Marketing Strategist
+                </button>
+                <a href="mailto:hello@example.com" class="btn btn-outline-primary d-md-inline-block d-none ms-4">Apply now</a>
+              </h3>
+              <div class="accordion-collapse border-0 collapse show" id="accordionVacanciesCollapse-1" aria-labelledby="accordionVacanciesHeading-1" data-bs-parent="#accordionVacancies">
+                <div class="accordion-body">
+                  <div class="row pb-3">
+                    <div class="col-md-8">
+                      <p>Blandit quam eget fames nisl. Vel vestibulum dictum morbi risus. Mauris dictumst vitae convallis aliquam ullamcorper. Quis non non ac massa augue id scelerisque. Egestas eget cursus egestas habitant orci. In posuere tempus, vulputate est, diam arcu.</p>
+                      <h6 class="fs-base fw-normal text-body">Requirements:</h6>
+                      <ul class="mb-4 ps-4">
+                        <li>Vitae luctus et arcu vitae eu tellus orci.</li>
+                        <li>Vel morbi nunc ullamcorper nisl, quis varius ultricies blandit.</li>
+                        <li>Purus cursus nascetur leo diam.</li>
+                        <li>Nascetur id turpis facilisis faucibus vel, iaculis etiam.</li>
+                      </ul>
+                      <h6 class="fs-base fw-normal text-body">Responsibilities:</h6>
+                      <ul class="mb-4 ps-4">
+                        <li>Dui, lectus at dui magna vitae vitae egestas sed.</li>
+                        <li>Vulputate placerat amet pulvinar lorem nisl.</li>
+                        <li>Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+                        <li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
+                      </ul>
+                      <a href="mailto:hello@example.com" class="btn btn-outline-primary d-md-none d-inline-block">Apply now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="accordion-item mb-0">
+              <h3 class="accordion-header d-flex align-items-center justify-content-between" id="accordionVacanciesHeading-2">
+                <button class="accordion-button border-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionVacanciesCollapse-2" aria-expanded="false" aria-controls="accordionVacanciesCollapse-2">
+                  Sales Executive
+                </button>
+                <a href="mailto:hello@example.com" class="btn btn-outline-primary d-md-inline-block d-none ms-4">Apply now</a>
+              </h3>
+              <div class="accordion-collapse border-0 collapse" id="accordionVacanciesCollapse-2" aria-labelledby="accordionVacanciesHeading-2" data-bs-parent="#accordionVacancies">
+                <div class="accordion-body">
+                  <div class="row pb-3">
+                    <div class="col-md-8">
+                      <p>Deserunt omnis a quos itaque. Aut fugit natus possimus nobis velit error obcaecati et quod mollitia, illo officia quo repudiandae doloremque culpa quidem ratione ab dolores inventore commodi dignissimos debitis quaerat aliquid? Minus ea quasi blanditiis provident.</p>
+                      <h6 class="fs-base fw-normal text-body">Requirements:</h6>
+                      <ul class="mb-4 ps-4">
+                        <li>Vitae luctus et arcu vitae eu tellus orci.</li>
+                        <li>Vel morbi nunc ullamcorper nisl, quis varius ultricies blandit.</li>
+                        <li>Purus cursus nascetur leo diam.</li>
+                        <li>Nascetur id turpis facilisis faucibus vel, iaculis etiam.</li>
+                      </ul>
+                      <h6 class="fs-base fw-normal text-body">Responsibilities:</h6>
+                      <ul class="mb-4 ps-4">
+                        <li>Dui, lectus at dui magna vitae vitae egestas sed.</li>
+                        <li>Vulputate placerat amet pulvinar lorem nisl.</li>
+                        <li>Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+                        <li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
+                      </ul>
+                      <a href="mailto:hello@example.com" class="btn btn-outline-primary d-md-none d-inline-block">Apply now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="accordion-item mb-0">
+              <h3 class="accordion-header d-flex align-items-center justify-content-between" id="accordionVacanciesHeading-3">
+                <button class="accordion-button border-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionVacanciesCollapse-3" aria-expanded="false" aria-controls="accordionVacanciesCollapse-3">
+                  Social Media Content Manager
+                </button>
+                <a href="mailto:hello@example.com" class="btn btn-outline-primary d-md-inline-block d-none ms-4">Apply now</a>
+              </h3>
+              <div class="accordion-collapse border-0 collapse" id="accordionVacanciesCollapse-3" aria-labelledby="accordionVacanciesHeading-3" data-bs-parent="#accordionVacancies">
+                <div class="accordion-body">
+                  <div class="row pb-3">
+                    <div class="col-md-8">
+                      <p>Officiis impedit quod maiores culpa magni minus corporis consequatur distinctio, ipsam pariatur dolorem optio, voluptate corrupti? Eum unde, alias excepturi nihil ducimus soluta! Nemo rerum temporibus voluptatum eveniet cupiditate numquam doloremque, cum ea, atque ut quas quis molestiae dolor vero?</p>
+                      <h6 class="fs-base fw-normal text-body">Requirements:</h6>
+                      <ul class="mb-4 ps-4">
+                        <li>Vitae luctus et arcu vitae eu tellus orci.</li>
+                        <li>Vel morbi nunc ullamcorper nisl, quis varius ultricies blandit.</li>
+                        <li>Purus cursus nascetur leo diam.</li>
+                        <li>Nascetur id turpis facilisis faucibus vel, iaculis etiam.</li>
+                      </ul>
+                      <h6 class="fs-base fw-normal text-body">Responsibilities:</h6>
+                      <ul class="mb-4 ps-4">
+                        <li>Dui, lectus at dui magna vitae vitae egestas sed.</li>
+                        <li>Vulputate placerat amet pulvinar lorem nisl.</li>
+                        <li>Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+                        <li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
+                      </ul>
+                      <a href="mailto:hello@example.com" class="btn btn-outline-primary d-md-none d-inline-block">Apply now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="accordion-item mb-0">
+              <h3 class="accordion-header d-flex align-items-center justify-content-between" id="accordionVacanciesHeading-4">
+                <button class="accordion-button border-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionVacanciesCollapse-4" aria-expanded="false" aria-controls="accordionVacanciesCollapse-4">
+                  Digital Marketing Account Manager
+                </button>
+                <a href="mailto:hello@example.com" class="btn btn-outline-primary d-md-inline-block d-none ms-4">Apply now</a>
+              </h3>
+              <div class="accordion-collapse border-0 collapse" id="accordionVacanciesCollapse-4" aria-labelledby="accordionVacanciesHeading-4" data-bs-parent="#accordionVacancies">
+                <div class="accordion-body">
+                  <div class="row pb-3">
+                    <div class="col-md-8">
+                      <p>Possimus, ipsum. Adipisci fugit, at, earum sint rerum harum repudiandae quos molestiae labore in facilis aspernatur. Unde, at quidem, ipsam ratione expedita iste facere vitae ipsa vero dolores sunt? Eaque consequatur obcaecati eius deserunt totam quibusdam blanditiis recusandae qui voluptatum sequi.</p>
+                      <h6 class="fs-base fw-normal text-body">Requirements:</h6>
+                      <ul class="mb-4 ps-4">
+                        <li>Vitae luctus et arcu vitae eu tellus orci.</li>
+                        <li>Vel morbi nunc ullamcorper nisl, quis varius ultricies blandit.</li>
+                        <li>Purus cursus nascetur leo diam.</li>
+                        <li>Nascetur id turpis facilisis faucibus vel, iaculis etiam.</li>
+                      </ul>
+                      <h6 class="fs-base fw-normal text-body">Responsibilities:</h6>
+                      <ul class="mb-4 ps-4">
+                        <li>Dui, lectus at dui magna vitae vitae egestas sed.</li>
+                        <li>Vulputate placerat amet pulvinar lorem nisl.</li>
+                        <li>Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+                        <li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
+                      </ul>
+                      <a href="mailto:hello@example.com" class="btn btn-outline-primary d-md-none d-inline-block">Apply now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="accordion-item mb-0">
+              <h3 class="accordion-header d-flex align-items-center justify-content-between" id="accordionVacanciesHeading-5">
+                <button class="accordion-button border-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionVacanciesCollapse-5" aria-expanded="false" aria-controls="accordionVacanciesCollapse-5">
+                  SEO Strategist
+                </button>
+                <a href="mailto:hello@example.com" class="btn btn-outline-primary d-md-inline-block d-none ms-4">Apply now</a>
+              </h3>
+              <div class="accordion-collapse border-0 collapse" id="accordionVacanciesCollapse-5" aria-labelledby="accordionVacanciesHeading-5" data-bs-parent="#accordionVacancies">
+                <div class="accordion-body">
+                  <div class="row pb-3">
+                    <div class="col-md-8">
+                      <p>Possimus, ipsum. Adipisci fugit, at, earum sint rerum harum repudiandae quos molestiae labore in facilis aspernatur. Unde, at quidem, ipsam ratione expedita iste facere vitae ipsa vero dolores sunt? Eaque consequatur obcaecati eius deserunt totam quibusdam blanditiis recusandae qui voluptatum sequi.</p>
+                      <h6 class="fs-base fw-normal text-body">Requirements:</h6>
+                      <ul class="mb-4 ps-4">
+                        <li>Vitae luctus et arcu vitae eu tellus orci.</li>
+                        <li>Vel morbi nunc ullamcorper nisl, quis varius ultricies blandit.</li>
+                        <li>Purus cursus nascetur leo diam.</li>
+                        <li>Nascetur id turpis facilisis faucibus vel, iaculis etiam.</li>
+                      </ul>
+                      <h6 class="fs-base fw-normal text-body">Responsibilities:</h6>
+                      <ul class="mb-4 ps-4">
+                        <li>Dui, lectus at dui magna vitae vitae egestas sed.</li>
+                        <li>Vulputate placerat amet pulvinar lorem nisl.</li>
+                        <li>Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+                        <li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
+                      </ul>
+                      <a href="mailto:hello@example.com" class="btn btn-outline-primary d-md-none d-inline-block">Apply now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Contact CV -->
+      <section class="mt-md-4 py-lg-6 py-5 bg-repeat-0 bg-position-center bg-size-cover" style="background-image: url(../assets/img/seo-agency/shapes/stroke/01.svg)">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <h2 class="h1 pb-md-3">Didn’t find what you were looking for?</h2>
+              <p class="lead">Send your CV or subscribe to our newsletter to receive information about new vacancies.</p>
+            </div>
+
+            <!-- Contact CV form -->
+            <form class="col-lg-6 offset-lg-1 col-md-7 needs-validation" novalidate>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="mb-4">
+                    <label for="applicant-name" class="form-label-lg">Name*</label>
+                    <input id="applicant-name" class="form-control" type="text" placeholder="Your name" required>
+                    <div class="invalid-tooltip">Please enter your name.</div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="mb-4">
+                    <label for="applicant-tel" class="form-label-lg">Phone*</label>
+                    <input id="applicant-tel" class="form-control" type="tel" placeholder="Your phone number" required>
+                    <div class="invalid-tooltip">Please enter your phone number.</div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="mb-4">
+                    <label for="applicant-email" class="form-label-lg">Email</label>
+                    <input id="applicant-email" class="form-control bg-image-0" type="email" placeholder="Your working email">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="mb-4">
+                    <label for="applicant-vacancy" class="form-label-lg">I am interested in</label>
+                    <select id="applicant-vacancy" class="form-control form-select bg-image-0">
+                      <option>Choose...</option>
+                      <option>Cheaf Marketing Officer</option>
+                      <option>Digital Marketing Manager</option>
+                      <option>Lead Digital PR Strategist</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="mb-4">
+                    <label for="applicant-cv" class="form-label-lg">Attach your CV*</label>
+                    <div class="custom-file">
+                      <input id="applicant-cv" class="form-control" type="file" required>
+                      <div class="invalid-tooltip">Please attach your CV.</div>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <label for="applicant-message" class="form-label-lg">Cover letter</label>
+                    <textarea id="applicant-message" class="form-control bg-image-0" rows="4" placeholder="Your cover letter"></textarea>
+                  </div>
+                  <div class="mb-4 form-check">
+                    <input id="applicant-subscribe" class="form-check-input" type="checkbox">
+                    <label for="applicant-subscribe" class="form-check-label">I want to subscribe to receive information about new vacancies.</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Send Resume</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer pt-3 bg-dark">
+      <div class="container my-lg-3 py-md-5 py-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 order-lg-1 order-1 mb-lg-0 mb-4">
+            <a class="d-inline-block mb-4" href="index.html">
+              <img src="../assets/img/seo-agency/logo-light.svg" width="130" alt="Createx logo">
+            </a>
+            <p class="mb-sm-4 mb-3 pb-lg-3 fs-xs text-light opacity-60">Createx SEO Agency is a full-service digital marketing agency. We help businesses make more money through a wealth of performance data and market research. We create science-based SEO strategies to empower our clients.</p>
+            <a href="#" class="btn-social mb-1 mt-md-0 mt-sm-1">
+              <i class="ci-linkedin"></i>
+            </a>
+            <a href="#" class="btn-social me-1 mb-2 mt-md-0 mt-sm-1">
+              <i class="ci-facebook"></i>
+            </a>
+            <a href="#" class="btn-social me-1 mb-2 mt-md-0 mt-sm-1">
+              <i class="ci-twitter"></i>
+            </a>
+            <a href="#" class="btn-social me-1 mb-2 mt-md-0 mt-sm-1">
+              <i class="ci-instagram"></i>
+            </a>
+          </div>
+          <div class="col-lg-2 col-sm-12 col-6 order-lg-2 order-sm-4 order-1 mb-lg-0 mb-4">
+            <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Company</h3>
+            <ul class="nav nav-light flex-lg-column flex-sm-row flex-column">
+              <li class="nav-item mb-2">
+                <a href="about.html" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">About Us</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="case-studies.html" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">Case Studies</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="blog.html" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">Blog</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="careers.html" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">Careers</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="contacts.html" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-sm-12 col-6 order-lg-3 order-sm-5 order-2 mb-lg-0 mb-4">
+            <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Services</h3>
+            <ul class="nav nav-light flex-lg-column flex-sm-row flex-column">
+              <li class="nav-item mb-2">
+                <a href="services-single.html" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">Social Media</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="services-single.html" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">SEO</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="services-single.html" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">Research</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="services-single.html" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">Content &amp; PR</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="services-single.html" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">Paid Traffic</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 order-lg-4 order-sm-3 order-3 mb-md-0 mb-4">
+            <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Contact us</h3>
+            <ul class="nav nav-light flex-md-column flex-sm-row flex-column">
+              <li class="nav-item mb-2">
+                <a href="tel:(405)555-0128" class="nav-link me-md-0 me-sm-4 p-0 fw-normal text-nowrap">
+                  <i class="ci-iphone me-2"></i>
+                  (405) 555-0128
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="mailto:hello@example.com" class="nav-link me-md-0 me-sm-4 p-0 fw-normal text-nowrap">
+                  <i class="ci-chat me-2"></i>
+                  hello@example.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 order-lg-5 order-sm-2 order-4 mb-sm-0 mb-4">
+            <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Sign up to our newsletter</h3>
+            <form>
+              <div class="input-group input-group-light mb-2 pb-1">
+                <input class="form-control pe-5 rounded" type="text" placeholder="Email address*" required>
+                <button class="btn btn-link bt-sm position-absolute top-50 end-0 translate-middle-y me-3 px-0" type="submit">
+                  <i class="ci-arrow-right lead text-white mt-n1"></i>
+                </button>
+              </div>
+              <small class="d-block form-text fs-xxs text-light">*Subscribe to our newsletter to receive early discount offers, updates and new products info.</small>
+            </form>
+          </div>
+        </div>
+      </div>
+      <hr class="hr-gradient hr-light">
+      <div class="container my-lg-3 py-4">
+        <div class="d-flex flex-wrap justify-content-sm-start justify-content-center mx-n2">
+          <a class="px-2 text-decoration-none" href="#">
+            <img src="../assets/img/seo-agency/footer/award-1.jpg" class="mb-sm-0 mb-3 rounded" width="120" alt="Award title">
+          </a>
+          <a class="px-2 text-decoration-none" href="#">
+            <img src="../assets/img/seo-agency/footer/award-2.jpg" class="mb-sm-0 mb-3 rounded" width="120" alt="Award title">
+          </a>
+          <a class="px-2 text-decoration-none" href="#">
+            <img src="../assets/img/seo-agency/footer/award-3.jpg" class="mb-sm-0 mb-3 rounded" width="120" alt="Award title">
+          </a>
+          <a class="px-2 text-decoration-none" href="#">
+            <img src="../assets/img/seo-agency/footer/award-4.jpg" class="mb-sm-0 mb-3 rounded" width="120" alt="Award title">
+          </a>
+        </div>
+      </div>
+      <div style="background-color: #292C37;">
+        <div class="container py-2">
+          <div class="d-flex align-items-sm-center justify-content-between py-1">
+            <div class="fs-xs text-light">
+              <span class="d-sm-inline d-block mb-1">
+                <span class="fs-sm">&copy; </span>
+                All rights reserved.
+              </span>
+              Made with 
+              <i class="ci-heart mt-n1 mx-1 fs-base text-primary align-middle"></i>
+              <a href="https://createx.studio/" class="text-light" target="_blank" rel="noopener noreferrer">by Createx Studio</a>
+            </div>
+            <div class="d-flex align-items-sm-center">
+              <span class="d-sm-inline-block d-none text-light fs-sm me-3 mb-1 align-vertical">Back to top</span>
+              <a class="btn-scroll-top position-static rounded" href="#top" data-scroll>
+                <i class="btn-scroll-top-icon ci-angle-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Vendor scripts: js libraries and plugins-->
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="../assets/vendor/simplebar/dist/simplebar.min.js"></script>
+
+    <!-- Main theme script-->
+    <script src="../assets/js/theme.min.js"></script>
+  </body>
+</html>

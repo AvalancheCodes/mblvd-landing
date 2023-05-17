@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Createx | SEO &amp; Marketing Agency - How to Increase Your ROI Through Scientific SEM?</title>
+
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Createx - Multipurpose Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, creative agency, construction, services, e-commerce, mobile app showcase, multipurpose, shop, ui kit, marketing, seo, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+    <link rel="manifest" href="../assets/img/site.webmanifest">
+    <link rel="mask-icon" color="#5bbad5" href="../assets/img/safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/tiny-slider/dist/tiny-slider.css"/>
+
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../assets/css/demo/seo-agency/theme.min.css">
+
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #787a80;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        background-color: #cfcfd1;
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+    </style>
+
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+    </script>
+  </head>
+
+  <!-- Body-->
+  <body class="is-sidebar">
+
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+    <!-- Main content-->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="page-wrapper position-relative">
+
+
+      <!-- Navbar -->
+      <!-- Remove .navbar-sticky class to detach .navbar from page scroll -->
+      <header class="header navbar navbar-expand-lg navbar-dark navbar-sticky navbar-floating">
+        <div class="container px-0 px-xl-3">
+          <a class="navbar-brand order-lg-1 me-lg-5 me-0 pe-lg-2" href="index.html">
+            <img class="navbar-brand-static" src="../assets/img/seo-agency/logo-light.svg" alt="Createx Logo" width="130">
+            <img class="navbar-brand-floating" src="../assets/img/seo-agency/logo-dark.svg" alt="Createx Logo" width="130">
+          </a>
+          <div class="d-flex align-items-center order-lg-3">
+            <a class="btn btn-primary d-sm-inline-block d-none ms-4" href="contacts.html">Talk to a human</a>
+            <button class="navbar-toggler ms-1 me-n3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse1" aria-expanded="false">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <nav class="collapse navbar-collapse order-lg-2" id="navbarCollapse1">
+            <ul class="navbar-nav me-auto text-nowrap">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="services.html">Services List</a></li>
+                  <li><a class="dropdown-item" href="services-single.html">Single Service</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Case Studies</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="case-studies.html">Case Studies Grid</a></li>
+                  <li><a class="dropdown-item" href="case-studies-single.html">Single Case Study</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About us</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="about.html">About</a></li>
+                  <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Blog</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="blog.html">Blog grid</a></li>
+                  <li><a class="dropdown-item" href="blog-single.html">Single Post</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Contacts</a>
+              </li>
+              <li class="nav-item d-sm-none d-block">
+                <a class="btn btn-sm btn-primary m-3" href="contacts.html">Get consultation</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+
+      <!-- Page title-->
+      <section class="py-md-6 py-5 bg-dark jarallax" data-jarallax data-speed="0.8">
+        <div class="container mt-5 py-lg-4">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-alt breadcrumb-light justify-content-center mb-sm-4">
+              <li class="breadcrumb-item">
+                <a href="index.html">
+                  <i class="ci-home"></i>
+                </a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="blog.html">Blog</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">How to Increase Your ROI Through Scientific SEM?</li>
+            </ol>
+          </nav>
+          <h1 class="display-3 col-lg-10 mx-auto px-sm-3 px-0 text-center text-light">How to Maximize Your ROI Through Scientific SEM?</h1>
+        </div>
+
+        <!-- Parallax bg -->
+        <div class="jarallax-img bg-repeat-0 bg-dark opacity-50" style="background-image: url(../assets/img/seo-agency/blog/single/page-title-bg.jpg);"></div>
+      </section>
+
+
+      <!-- Page content -->
+      <section class="py-lg-6 py-5 bg-repeat-0 bg-position-center bg-size-cover" style="background-image: url(../assets/img/seo-agency/shapes/stroke/06.svg)">
+        <div class="container">
+          <div class="row">
+
+            <!-- Content -->
+            <div class="col-lg-8">
+              <div class="row align-items-end text-sm-start text-center">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                  <span class="d-inline-block mb-1 text-muted">Published</span>
+                  <h5 class="mb-0">
+                    <i class="ci-calendar me-2"></i>
+                    July 5, 2020
+                  </h5>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mt-sm-0 mt-3">
+                  <span class="d-inline-block mb-1 text-muted">Reading time</span>
+                  <h5 class="mb-0">
+                    <i class="ci-clock me-2"></i>
+                    4 min
+                  </h5>
+                </div>
+                <div class="col-lg-5 col-md-4 mt-md-0 mt-3">
+                  <div class="text-nowrap">
+                    <h5 class="d-inline-block me-2 mb-0">Share:</h5>
+                    <a href="#" class="btn-social me-1">
+                      <i class="ci-facebook"></i>
+                    </a>
+                    <a href="#" class="btn-social me-1">
+                      <i class="ci-twitter"></i>
+                    </a>
+                    <a href="#" class="btn-social">
+                      <i class="ci-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <hr class="my-lg-5 my-4">
+              <p class="pt-3 lead fw-bold">Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio. Interdum aenean sit malesuada ornare sed gravida rhoncus, congue. Purus auctor nullam diam quis est hendrerit ac euismod.</p>
+              <p>At facilisi sapien posuere eget nunc senectus proin nullam. Tortor senectus in et sagittis, vitae diam cras dignissim. Varius adipiscing eget diam nisi. Orci, consectetur vulputate metus ornare pharetra, neque, fermentum. Vel nec rhoncus, non nunc, neque in massa. Feugiat leo nam nisl lacinia amet, odio. Mi varius viverra risus vel.</p>
+              <p>Amet, morbi sed pharetra, elit eget mi potenti. Condimentum orci interdum feugiat lectus libero duis. Nisl massa, elementum varius sit. Nunc felis, porttitor aliquam urna, accumsan et sed. Aliquet non sed duis diam vehicula rhoncus.</p>
+              <h2 class="pt-3">Why SEM Without CRO Is Impossible?</h2>
+              <p>Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in ornare lectus eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas. Consectetur neque ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo, pharetra nibh risus. Facilisi at porttitor volutpat natoque proin amet, nulla. Vivamus ut lobortis sagittis curabitur tellus convallis eget netus vitae.</p>
+              <img src="../assets/img/seo-agency/blog/single/01.jpg" alt="Post image" class="d-block mb-5 rounded">
+              <blockquote class="blockquote">
+                <p class="lead fw-bold">Consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus  facilisi. Vitae id turpis tempus ornare turpis quis non. Congue tortor in tot euismod vulputate etiam eros. Vel accumsan at elit neque, ipsum.</p>
+              </blockquote>
+              <h2 class="pt-3">Check your conversion tracking</h2>
+              <p>Mauris amet arcu nisl vel dictum tellus. Sed rhoncus, ut sed id ut erat mattis. Vitae mus blandit in neque amet non fringilla blandit:</p>
+              <ul class="ps-4">
+                <li>Dui, lectus at dui magna vitae vitae egestas sed.</li>
+                <li>Vulputate placerat amet pulvinar lorem nisl.</li>
+                <li>Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+                <li>Etiam duis lobortis in fames ultrices commodo nibh.</li>
+              </ul>
+              <p>Enim, vel massa odio diam. Blandit massa gravida feugiat elementum id nec sed leo. Nisi in ornare lectus eget. Urna, risus, consectetur volutpat lorem purus. Velit aliquet nibh vitae maecenas. Consectetur neque ut aliquam eros, purus enim dignissim aenean vitae. Ultrices fames augue mattis tortor est justo, pharetra nibh risus. Facilisi at porttitor volutpat natoque proin amet, nulla. Vivamus ut lobortis sagittis curabitur tellus convallis eget netus vitae.</p>
+              <div class="d-sm-flex justify-content-between pt-lg-grid-gutter pt-sm-4">
+
+                <!-- Widget: Tags -->
+                <div class="widget mb-sm-0 mb-3">
+                  <h5 class="h6 d-sm-inline-block me-sm-2 mb-sm-0 mb-2">Tags:</h5>
+                  <a class="btn-tag me-1 mb-2" href="#">#business</a>
+                  <a class="btn-tag me-1 mb-2" href="#">#PPC</a>
+                  <a class="btn-tag me-1 mb-2" href="#">#targeting</a>
+                </div>
+
+                <!-- Sharing -->
+                <div class="text-nowrap">
+                  <h5 class="h6 d-sm-inline-block me-sm-2 mb-sm-0 mb-2">Share:</h5>
+                  <a href="#" class="btn-social me-1">
+                    <i class="ci-facebook"></i>
+                  </a>
+                  <a href="#" class="btn-social me-1">
+                    <i class="ci-twitter"></i>
+                  </a>
+                  <a href="#" class="btn-social">
+                    <i class="ci-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+              <hr class="my-lg-5 my-4">
+
+              <!-- Entry navigation (only for 2 items) -->
+              <nav class="d-flex justify-content-between" aria-label="Entry navigation example">
+
+                <!-- Entry navigation item left -->
+                <a class="entry-nav image-scale me-3" href="#">
+                  <h3 class="h5 entry-nav-heading pb-sm-2">
+                    <i class="ci-arrow-left me-2"></i>
+                    Prev post
+                  </h3>
+                  <div class="d-flex">
+                    <div class="entry-nav-thumb image-inner rounded d-none d-sm-block">
+                      <img class="me-1" src="../assets/img/seo-agency/blog/th/01.jpg" width="100" alt="Media">
+                    </div>
+                    <div class="ps-sm-3">
+                      <span class="fs-sm text-muted">
+                        <i class="ci-clock me-2"></i>
+                        March 12, 2020
+                      </span>
+                      <h6 class="nav-heading fs-md fw-bold mb-0 mt-1 text-capitalize">
+                        10 tips for a small business digital marketing strategy
+                      </h6>
+                    </div>
+                  </div>
+                </a>
+
+                <!-- Entry navigation item right -->
+                <a class="entry-nav image-scale ms-3" href="#">
+                  <h3 class="h5 entry-nav-heading pb-sm-2 text-end">
+                    Next post
+                    <i class="ci-arrow-right ms-2"></i>
+                  </h3>
+                  <div class="d-flex justify-content-end">
+                    <div class="text-end pe-sm-3">
+                      <span class="fs-sm text-muted">
+                        <i class="ci-clock me-2"></i>
+                        April 9, 2020
+                      </span>
+                      <h6 class="nav-heading fs-md fw-bold mb-0 mt-1 text-capitalize">
+                        Why SEO Is All About Content Marketing?
+                      </h6>
+                    </div>
+                    <div class="entry-nav-thumb image-inner rounded d-none d-sm-block">
+                      <img class="ms-1" src="../assets/img/seo-agency/blog/th/02.jpg" width="100" alt="Media">
+                    </div>
+                  </div>
+                </a>
+              </nav>
+            </div> <!-- / Content -->
+
+            <!-- Sidebar -->
+            <aside class="col-lg-4">
+              <div class="offcanvas offcanvas-collapse offcanvas-end ps-lg-4 ps-xl-5" id="blog-sidebar">
+                <div class="offcanvas-header shadow mb-3">
+                  <h5 class="h4 mb-0">Sidebar</h5>
+                  <button class="btn-close me-n1" type="button" data-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body py-4 py-lg-0" data-simplebar data-simplebar-auto-hide="true">
+
+                  <!-- Search -->
+                  <form class="mb-lg-5 mb-4 pb-2">
+                    <div class="input-group">
+                      <input class="form-control pe-5 rounded" type="search" placeholder="Search the blog" required>
+                      <button class="btn btn-link position-absolute top-50 end-0 me-3 px-0 translate-middle-y zindex-5" type="submit">
+                        <i class="ci-search"></i>
+                      </button>
+                    </div>
+                  </form>
+
+                  <!-- Widget: Author -->
+                  <div class="widget mb-lg-5 mb-4 pb-2">
+                    <h3 class="h4">Author</h3>
+                    <div class="d-flex align-items-start">
+                      <img class="d-inline-block rounded me-3" src="../assets/img/seo-agency/blog/single/author.jpg" alt="Diane Mccoy" width="100">
+                      <div class="ps-1">
+                        <h4 class="h5 mb-1">Diane Mccoy</h4>
+                        <p class="mb-2 fs-sm text-muted">Lead Digital PR Strategist</p>
+                        <a class="btn-social me-2 mb-2" href="#">
+                          <i class="ci-instagram"></i>
+                        </a>
+                        <a class="btn-social me-2 mb-2" href="#">
+                          <i class="ci-facebook"></i>
+                        </a>
+                        <a class="btn-social me-2 mb-2" href="#">
+                          <i class="ci-linkedin"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Widget: Featured entries list -->
+                  <div class="widget mb-lg-5 mb-4 pb-2">
+                    <h3 class="h4">Now Trending</h3>
+                    <ul class="list-unstyled">
+
+                      <!-- Item -->
+                      <li class="image-scale d-flex align-items-start mb-4">
+                        <a href="#" class="flex-shrink-0 image-inner rounded me-3" style="width: 100px;">
+                          <img src="../assets/img/seo-agency/blog/th/01.jpg" alt="Media">
+                        </a>
+                        <div class="ps-1">
+                          <span class="d-block mb-1 fs-sm text-muted">
+                            <i class="ci-clock fs-base align-middle mt-n1 me-2"></i>
+                            July 5, 2020
+                          </span>
+                          <h4 class="h6 mb-1">
+                            <a class="nav-link" href="#">5 Surprising Ways to Combine Content Marketing with PPC</a>
+                          </h4>
+                        </div>
+                      </li>
+
+                      <!-- Item -->
+                      <li class="image-scale d-flex align-items-start mb-4">
+                        <a href="#" class="flex-shrink-0 image-inner rounded me-3" style="width: 100px;">
+                          <img src="../assets/img/seo-agency/blog/th/02.jpg" alt="Media">
+                        </a>
+                        <div class="ps-1">
+                          <span class="d-block mb-1 fs-sm text-muted">
+                            <i class="ci-clock fs-base align-middle mt-n1 me-2"></i>
+                            April 9, 2020
+                          </span>
+                          <h4 class="h6 mb-1">
+                            <a class="nav-link" href="#">Why SEO Is All About Content Marketing?</a>
+                          </h4>
+                        </div>
+                      </li>
+
+                      <!-- Item -->
+                      <li class="image-scale d-flex align-items-start">
+                        <a href="#" class="flex-shrink-0 image-inner rounded me-3" style="width: 100px;">
+                          <img src="../assets/img/seo-agency/blog/th/03.jpg" alt="Media">
+                        </a>
+                        <div class="ps-1">
+                          <span class="d-block mb-1 fs-sm text-muted">
+                            <i class="ci-clock fs-base align-middle mt-n1 me-2"></i>
+                            March 12, 2020
+                          </span>
+                          <h4 class="h6 mb-1">
+                            <a class="nav-link" href="#">10 tips for a small business digital marketing strategy</a>
+                          </h4>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Widget: Tags -->
+                  <div class="widget mb-lg-5 mb-4 pb-2">
+                    <h3 class="h4">Tags</h3>
+                    <a class="btn-tag me-1 mb-2" href="#">#tips&amp;tricks</a>
+                    <a class="btn-tag me-1 mb-2" href="#">#strategy</a>
+                    <a class="btn-tag me-1 mb-2" href="#">#SMM</a>
+                    <a class="btn-tag me-1 mb-2" href="#">#business</a>
+                    <a class="btn-tag me-1 mb-2" href="#">#PPC</a>
+                    <a class="btn-tag me-1 mb-2" href="#">#targeting</a>
+                  </div>
+                </div>
+              </div>
+            </aside> <!--  / Sidebar -->
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Blog subscribe alternative (dark) -->
+      <section class="mt-md-4 py-lg-6 py-5 bg-dark bg-repeat-0 bg-position-center-bottom bg-size-contain" style="background-image: url(../assets/img/seo-agency/blog/form-subscribe/bg-shape.svg);">
+        <div class="container">
+          <div class="row justify-content-md-start justify-content-center">
+            <div class="col-lg-5 col-md-6 col-sm-10 order-md-1 order-2 text-md-start text-center">
+              <h2 class="h1 text-light">Subscribe to our blog</h2>
+              <p class="pb-md-3 lead text-light">And receive latest trends in search, marketing, digital and news.</p>
+
+              <!-- Blog subscribe form -->
+              <form class="d-sm-block d-none">
+                <label for="blog-email" class="form-label text-light">Email</label>
+                <div class="mb-4 input-group">
+                  <input id="blog-email" class="form-control form-control-lg input-light" type="email" placeholder="Your working email" required>
+                  <button class="btn btn-primary btn-lg" type="submit">Subscribe</button>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input id="blog-subscribe" class="form-check-input" type="checkbox" checked>
+                  <label for="blog-subscribe" class="form-check-label fs-sm text-light">I agree to receive communications from Createx SEO Agency.</label>
+                </div>
+              </form>
+
+              <!-- Blog subscribe form mobile -->
+              <form class="d-sm-none d-block">
+                <div class="mb-4">
+                  <label for="blog-email-m" class="form-label text-light">Email</label>
+                  <input id="blog-email-m" class="form-control input-light text-md-start text-center" type="email" placeholder="Your working email" required>
+                  <button class="btn btn-primary d-block w-100 mt-3" type="submit">Subscribe</button>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input id="blog-subscribe-m" class="form-check-input" type="checkbox" checked>
+                  <label for="blog-subscribe-m" class="form-check-label fs-sm text-light">I agree to receive communications from Createx SEO Agency.</label>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-5 offset-lg-2 offset-md-1 col-sm-8 col-10 order-md-2 order-1 mb-md-0 mb-4">
+              <div class="parallax mx-auto">
+                <div class="parallax-layer" data-depth="0.05"><img src="../assets/img/seo-agency/blog/form-subscribe/illustration-alt/01.svg" alt="Layer-1"></div>
+                <div class="parallax-layer" data-depth="0.1"><img src="../assets/img/seo-agency/blog/form-subscribe/illustration-alt/02.svg" alt="Layer-2"></div>
+                <div class="parallax-layer" data-depth="0.13"><img src="../assets/img/seo-agency/blog/form-subscribe/illustration-alt/03.svg" alt="Layer-3"></div>
+                <div class="parallax-layer" data-depth="0.16"><img src="../assets/img/seo-agency/blog/form-subscribe/illustration-alt/04.svg" alt="Layer-4"></div>
+                <div class="parallax-layer" data-depth="0.19"><img src="../assets/img/seo-agency/blog/form-subscribe/illustration-alt/05.svg" alt="Layer-5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Related posts -->
+      <section class="mt-md-4 py-lg-6 py-5 bg-repeat-0 bg-position-center-start bg-size-contain" style="background-image: url(../assets/img/seo-agency/shapes/fill/04.svg);">
+        <div class="container pb-md-5">
+          <div class="d-flex justify-content-between mb-md-5 mb-4 pb-md-2">
+            <h2 class="h1 mb-0">You may also like</h2>
+            <div class="tns-custom-controls tns-controls-inverse mb-md-n4" id="tns-related-controls" tabindex="0">
+              <button type="button" data-controls="prev" tabindex="-1">
+                <i class="ci-arrow-left"></i>
+              </button>
+              <button type="button" data-controls="next" tabindex="-1">
+                <i class="ci-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Carousel -->
+          <div class="tns-carousel-wrapper">
+            <div class="tns-carousel-inner" data-carousel-options='{
+              "gutter": 30,
+              "nav": false,
+              "controlsContainer": "#tns-related-controls",
+              "responsive": {
+                "0": {
+                  "items": 1
+                },
+                "576": {
+                  "items": 2
+                },
+                "992": {
+                  "items": 3
+                }
+              }
+            }'>
+              <div>
+                <article class="image-scale card h-100 border-0 bg-transparent">
+                  <a class="image-inner card-header mb-3 p-0 border-0 rounded" href="blog-single.html">
+                    <img src="../assets/img/seo-agency/blog/03.jpg" alt="Blog card image">
+                  </a>
+                  <div class="card-body p-0">
+                    <ul class="nav nav-muted mb-2">
+                      <li class="nav-item me-2">
+                        <a class="nav-link d-inline-block me-2 p-0 fs-sm fw-normal" href="#">
+                          SEO
+                        </a>
+                        <span class="text-border">|</span>
+                      </li>
+                      <li class="nav-item me-2">
+                        <a class="nav-link d-inline-block me-2 p-0 fs-sm fw-normal" href="#">
+                          <i class="ci-clock mt-n1 me-2 fs-base align-middle"></i>
+                          May 1, 2020
+                        </a>
+                        <span class="text-border">|</span>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link d-inline-block p-0 fs-sm fw-normal" href="#">
+                          <i class="ci-profile mt-n1 me-2 fs-base align-middle"></i>
+                          By Shawn Edwards
+                        </a>
+                      </li>
+                    </ul>
+                    <h3 class="h5 mb-2">
+                      <a class="nav-link" href="blog-single.html">
+                        The Best Practices to Optimize Your Website for Mobile.
+                      </a>
+                    </h3>
+                    <p class="mb-3">Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...</p>
+                  </div>
+                  <div class="card-footer p-0 border-0">
+                    <div class="h6 mb-0">
+                      <a class="nav-link py-3" href="blog-single.html">Read more</a>
+                      <i class="ci-arrow-right text-primary align-middle h5 mb-0 ms-2"></i>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div>
+                <article class="image-scale card h-100 border-0 bg-transparent">
+                  <a class="image-inner card-header mb-3 p-0 border-0 rounded" href="blog-single.html">
+                    <img src="../assets/img/seo-agency/blog/04.jpg" alt="Blog card image">
+                  </a>
+                  <div class="card-body p-0">
+                    <ul class="nav nav-muted mb-2">
+                      <li class="nav-item me-2">
+                        <a class="nav-link d-inline-block me-2 p-0 fs-sm fw-normal" href="#">
+                          Paid Search
+                        </a>
+                        <span class="text-border">|</span>
+                      </li>
+                      <li class="nav-item me-2">
+                        <a class="nav-link d-inline-block me-2 p-0 fs-sm fw-normal" href="#">
+                          <i class="ci-clock mt-n1 me-2 fs-base align-middle"></i>
+                          April 25, 2020
+                        </a>
+                        <span class="text-border">|</span>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link d-inline-block p-0 fs-sm fw-normal" href="#">
+                          <i class="ci-profile mt-n1 me-2 fs-base align-middle"></i>
+                          By Diane Mccoy
+                        </a>
+                      </li>
+                    </ul>
+                    <h3 class="h5 mb-2">
+                      <a class="nav-link" href="blog-single.html">
+                        10 Seriously Underused Paid Search Strategies.
+                      </a>
+                    </h3>
+                    <p class="mb-3">Euismod congue faucibus diam etiam diam netus vitae ornare vitae. Cursus sollicitudin posuere venenatis...</p>
+                  </div>
+                  <div class="card-footer p-0 border-0">
+                    <div class="h6 mb-0">
+                      <a class="nav-link py-3" href="blog-single.html">Read more</a>
+                      <i class="ci-arrow-right text-primary align-middle h5 mb-0 ms-2"></i>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div>
+                <article class="image-scale card h-100 border-0 bg-transparent">
+                  <a class="image-inner card-header mb-3 p-0 border-0 rounded" href="blog-single.html">
+                    <img src="../assets/img/seo-agency/blog/05.jpg" alt="Blog card image">
+                  </a>
+                  <div class="card-body p-0">
+                    <ul class="nav nav-muted mb-2">
+                      <li class="nav-item me-2">
+                        <a class="nav-link d-inline-block me-2 p-0 fs-sm fw-normal" href="#">
+                          Media &amp; Press
+                        </a>
+                        <span class="text-border">|</span>
+                      </li>
+                      <li class="nav-item me-2">
+                        <a class="nav-link d-inline-block me-2 p-0 fs-sm fw-normal" href="#">
+                          <i class="ci-clock mt-n1 me-2 fs-base align-middle"></i>
+                          June 3, 2020
+                        </a>
+                        <span class="text-border">|</span>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link d-inline-block p-0 fs-sm fw-normal" href="#">
+                          <i class="ci-profile mt-n1 me-2 fs-base align-middle"></i>
+                          By Shawn Edwards
+                        </a>
+                      </li>
+                    </ul>
+                    <h3 class="h5 mb-2">
+                      <a class="nav-link" href="blog-single.html">
+                        How to Create Content That Gets Linked and Shared.
+                      </a>
+                    </h3>
+                    <p class="mb-3">Eu donec pellentesque et aliquet. Fringilla morbi etiam turpis nisl nunc, quis sagittis ut. Pulvinar amet vitae...</p>
+                  </div>
+                  <div class="card-footer p-0 border-0">
+                    <div class="h6 mb-0">
+                      <a class="nav-link py-3" href="blog-single.html">Read more</a>
+                      <i class="ci-arrow-right text-primary align-middle h5 mb-0 ms-2"></i>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div>
+                <article class="image-scale card h-100 border-0 bg-transparent">
+                  <a class="image-inner card-header mb-3 p-0 border-0 rounded" href="blog-single.html">
+                    <img src="../assets/img/seo-agency/blog/06.jpg" alt="Blog card image">
+                  </a>
+                  <div class="card-body p-0">
+                    <ul class="nav nav-muted mb-2">
+                      <li class="nav-item me-2">
+                        <a class="nav-link d-inline-block me-2 p-0 fs-sm fw-normal" href="#">
+                          Ad Tips
+                        </a>
+                        <span class="text-border">|</span>
+                      </li>
+                      <li class="nav-item me-2">
+                        <a class="nav-link d-inline-block me-2 p-0 fs-sm fw-normal" href="#">
+                          <i class="ci-clock mt-n1 me-2 fs-base align-middle"></i>
+                          March 18, 2020
+                        </a>
+                        <span class="text-border">|</span>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link d-inline-block p-0 fs-sm fw-normal" href="#">
+                          <i class="ci-profile mt-n1 me-2 fs-base align-middle"></i>
+                          By Jane Cooper
+                        </a>
+                      </li>
+                    </ul>
+                    <h3 class="h5 mb-2">
+                      <a class="nav-link" href="blog-single.html">
+                        12 Simple Tips to Creating an Effective Ad.
+                      </a>
+                    </h3>
+                    <p class="mb-3">Imperdiet risus consectetur dignissim lorem sollicitudin eget bibendum pellentesque nec. Adipiscing viverra in non euismod. Amet nulla aliquam nulla magna...</p>
+                  </div>
+                  <div class="card-footer p-0 border-0">
+                    <div class="h6 mb-0">
+                      <a class="nav-link py-3" href="blog-single.html">Read more</a>
+                      <i class="ci-arrow-right text-primary align-middle h5 mb-0 ms-2"></i>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer pt-3 bg-dark">
+      <div class="container my-lg-3 py-md-5 py-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 order-lg-1 order-1 mb-lg-0 mb-4">
+            <a class="d-inline-block mb-4" href="index.html">
+              <img src="../assets/img/seo-agency/logo-light.svg" width="130" alt="Createx logo">
+            </a>
+            <p class="mb-sm-4 mb-3 pb-lg-3 fs-xs text-light opacity-60">Createx SEO Agency is a full-service digital marketing agency. We help businesses make more money through a wealth of performance data and market research. We create science-based SEO strategies to empower our clients.</p>
+            <a href="#" class="btn-social mb-1 mt-md-0 mt-sm-1">
+              <i class="ci-linkedin"></i>
+            </a>
+            <a href="#" class="btn-social me-1 mb-2 mt-md-0 mt-sm-1">
+              <i class="ci-facebook"></i>
+            </a>
+            <a href="#" class="btn-social me-1 mb-2 mt-md-0 mt-sm-1">
+              <i class="ci-twitter"></i>
+            </a>
+            <a href="#" class="btn-social me-1 mb-2 mt-md-0 mt-sm-1">
+              <i class="ci-instagram"></i>
+            </a>
+          </div>
+          <div class="col-lg-2 col-sm-12 col-6 order-lg-2 order-sm-4 order-1 mb-lg-0 mb-4">
+            <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Company</h3>
+            <ul class="nav nav-light flex-lg-column flex-sm-row flex-column">
+              <li class="nav-item mb-2">
+                <a href="about.html" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">About Us</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="case-studies.html" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">Case Studies</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="blog.html" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">Blog</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="careers.html" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">Careers</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="contacts.html" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-sm-12 col-6 order-lg-3 order-sm-5 order-2 mb-lg-0 mb-4">
+            <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Services</h3>
+            <ul class="nav nav-light flex-lg-column flex-sm-row flex-column">
+              <li class="nav-item mb-2">
+                <a href="services-single.html" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">Social Media</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="services-single.html" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">SEO</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="services-single.html" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">Research</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="services-single.html" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">Content &amp; PR</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="services-single.html" class="nav-link me-lg-0 me-sm-4 p-0 fw-normal">Paid Traffic</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 order-lg-4 order-sm-3 order-3 mb-md-0 mb-4">
+            <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Contact us</h3>
+            <ul class="nav nav-light flex-md-column flex-sm-row flex-column">
+              <li class="nav-item mb-2">
+                <a href="tel:(405)555-0128" class="nav-link me-md-0 me-sm-4 p-0 fw-normal text-nowrap">
+                  <i class="ci-iphone me-2"></i>
+                  (405) 555-0128
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="mailto:hello@example.com" class="nav-link me-md-0 me-sm-4 p-0 fw-normal text-nowrap">
+                  <i class="ci-chat me-2"></i>
+                  hello@example.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 order-lg-5 order-sm-2 order-4 mb-sm-0 mb-4">
+            <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Sign up to our newsletter</h3>
+            <form>
+              <div class="input-group input-group-light mb-2 pb-1">
+                <input class="form-control pe-5 rounded" type="text" placeholder="Email address*" required>
+                <button class="btn btn-link bt-sm position-absolute top-50 end-0 translate-middle-y me-3 px-0" type="submit">
+                  <i class="ci-arrow-right lead text-white mt-n1"></i>
+                </button>
+              </div>
+              <small class="d-block form-text fs-xxs text-light">*Subscribe to our newsletter to receive early discount offers, updates and new products info.</small>
+            </form>
+          </div>
+        </div>
+      </div>
+      <hr class="hr-gradient hr-light">
+      <div class="container my-lg-3 py-4">
+        <div class="d-flex flex-wrap justify-content-sm-start justify-content-center mx-n2">
+          <a class="px-2 text-decoration-none" href="#">
+            <img src="../assets/img/seo-agency/footer/award-1.jpg" class="mb-sm-0 mb-3 rounded" width="120" alt="Award title">
+          </a>
+          <a class="px-2 text-decoration-none" href="#">
+            <img src="../assets/img/seo-agency/footer/award-2.jpg" class="mb-sm-0 mb-3 rounded" width="120" alt="Award title">
+          </a>
+          <a class="px-2 text-decoration-none" href="#">
+            <img src="../assets/img/seo-agency/footer/award-3.jpg" class="mb-sm-0 mb-3 rounded" width="120" alt="Award title">
+          </a>
+          <a class="px-2 text-decoration-none" href="#">
+            <img src="../assets/img/seo-agency/footer/award-4.jpg" class="mb-sm-0 mb-3 rounded" width="120" alt="Award title">
+          </a>
+        </div>
+      </div>
+      <div style="background-color: #292C37;">
+        <div class="container py-2">
+          <div class="d-flex align-items-sm-center justify-content-between py-1">
+            <div class="fs-xs text-light">
+              <span class="d-sm-inline d-block mb-1">
+                <span class="fs-sm">&copy; </span>
+                All rights reserved.
+              </span>
+              Made with 
+              <i class="ci-heart mt-n1 mx-1 fs-base text-primary align-middle"></i>
+              <a href="https://createx.studio/" class="text-light" target="_blank" rel="noopener noreferrer">by Createx Studio</a>
+            </div>
+            <div class="d-flex align-items-sm-center">
+              <span class="d-sm-inline-block d-none text-light fs-sm me-3 mb-1 align-vertical">Back to top</span>
+              <a class="btn-scroll-top position-static rounded" href="#top" data-scroll>
+                <i class="btn-scroll-top-icon ci-angle-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Offcanvas toggle btn -->
+    <button class="btn btn-primary btn-sm sidebar-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#blog-sidebar" data-fixed-element>
+      <i class="ci-sidebar-end fs-base me-1 align-middle"></i>
+      Sidebar
+    </button>
+
+
+    <!-- Vendor scripts: js libraries and plugins-->
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="../assets/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="../assets/vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="../assets/vendor/simplebar/dist/simplebar.min.js"></script>
+
+    <!-- Main theme script-->
+    <script src="../assets/js/theme.min.js"></script>
+  </body>
+</html>

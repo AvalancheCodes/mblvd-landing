@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Createx UI Kit | Icon font</title>
+
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Createx - Multipurpose Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, creative agency, construction, services, e-commerce, shopping cart, mobile app showcase, multipurpose, shop, ui kit, marketing, seo, landing, html5, css3, javascript, gallery, slider, touch, creative">
+    <meta name="author" content="Createx Studio">
+
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+    <link rel="manifest" href="../assets/img/site.webmanifest">
+    <link rel="mask-icon" color="#5bbad5" href="../assets/img/safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="../assets/vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/themes/prism.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/plugins/toolbar/prism-toolbar.css"/>
+    <link rel="stylesheet" media="screen" href="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.css"/>
+
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../assets/css/theme.min.css">
+  </head>
+
+
+  <!-- Body-->
+  <body>
+    <main class="container-fluid">
+
+      <!-- Main content-->
+      <section class="offcanvas-enabled-start row pb-3 pb-md-4">
+        <div class="col-xl-9">
+
+          <!-- Navbar-->
+          <header class="navbar navbar-expand navbar-light fixed-top navbar-shadow bg-light px-3 px-lg-4" data-scroll-header data-fixed-element>
+            <a class="navbar-brand d-lg-none" href="typography.html">
+              <img src="../assets/img/components/logo/logo-dark.svg" alt="Createx" width="130">
+            </a>
+            <button class="navbar-toggler d-block d-lg-none me-3 ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#componentsNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav ms-auto d-none d-lg-flex align-items-center">
+              <li class="nav-item">
+                <a class="nav-link py-0" href="../../index.html">
+                  <i class="ci-eye align-middle mt-n1 me-2"></i>
+                  Live preview
+                </a>
+              </li>
+              <li class="nav-item">
+                <div class="nav-link disabled text-border px-1">|</div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-0" href="../documentation/dev-setup.html">
+                  <i class="ci-files align-middle mt-n1 me-2"></i>
+                  Documentation
+                </a>
+              </li>
+              <li class="nav-item">
+                <div class="nav-link disabled text-border px-1">|</div>
+              </li>
+            </ul>
+            <a href="https://themes.getbootstrap.com/product/createx-multipurpose-template-ui-kit/" class="btn btn-primary btn-hover-shadow ms-lg-4" target="_blank" rel="noopener">
+              <i class="ci-cart me-2 d-none d-sm-inline-block"></i>
+              Buy now
+            </a>
+          </header>
+
+          <!-- Side navigation (Offcanvas)-->
+          <aside class="offcanvas offcanvas-expand offcanvas-start bg-dark" id="componentsNav">
+            <div class="offcanvas-header d-none d-lg-block py-4">
+              <a class="navbar-brand py-2" href="typography.html">
+                <img src="../assets/img/components/logo/logo-white.svg" alt="Createx" width="130">
+              </a>
+              <span class="badge bg-success">UI Kit</span>
+            </div>
+            <div class="offcanvas-header d-flex d-lg-none align-items-center">
+              <div class="d-flex align-items-center mt-1">
+                <h5 class="text-light mb-0 me-3">Menu</h5>
+                <span class="badge bg-success">UI Kit</span>
+              </div>
+              <button class="btn-close btn-close-white" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="d-flex d-lg-none align-items-center py-4 px-3 border-bottom border-light">
+              <a class="btn btn-primary d-block w-100 me-3" href="../../index.html"><i class="ci-eye mt-n1 me-2"></i>Preview</a>
+              <a class="btn btn-warning d-block w-100 mt-0" href="../documentation/dev-setup.html"><i class="ci-files mt-n1 me-2"></i>Docs</a>
+            </div>
+            <div class="offcanvas-body px-0 pt-4 pb-grid-gutter" data-simplebar data-simplebar-inverse>
+              <h6 class="fs-lg text-light px-4 mt-2 mb-3">Content</h6>
+              <hr class="hr-gradient hr-light mt-0 mb-2 opacity-25">
+              <nav class="nav nav-light">
+                <a class="nav-link px-4" href="typography.html">Typography</a>
+                <a class="nav-link px-4 active" href="icon-font.html">Icon font</a>
+                <a class="nav-link px-4" href="code.html">Code</a>
+                <a class="nav-link px-4" href="images.html">Images &amp; figures</a>
+                <a class="nav-link px-4" href="tables.html">Tables</a>
+              </nav>
+              <h6 class="fs-lg text-light px-4 pt-1 mt-4 mb-3">Components</h6>
+              <hr class="hr-gradient hr-light mt-0 mb-2 opacity-25">
+              <nav class="nav nav-light">
+                <a class="nav-link px-4" href="accordion.html">Accordion</a>
+                <a class="nav-link px-4" href="alerts.html">Alerts</a>
+                <a class="nav-link px-4" href="badge.html">Badges</a>
+                <a class="nav-link px-4" href="blog-components.html">Blog components</a>
+                <a class="nav-link px-4" href="breadcrumb.html">Breadcrumb</a>
+                <a class="nav-link px-4" href="buttons.html">Buttons</a>
+                <a class="nav-link px-4" href="button-group.html">Button group</a>
+                <a class="nav-link px-4" href="cards.html">Cards</a>
+                <a class="nav-link px-4" href="carousel.html">Carousel</a>
+                <a class="nav-link px-4" href="collapse.html">Collapse</a>
+                <a class="nav-link px-4" href="contacts-card.html">Contacts card</a>
+                <a class="nav-link px-4" href="countdown.html">Countdown</a>
+                <a class="nav-link px-4" href="dividers.html">Dividers</a>
+                <a class="nav-link px-4" href="dropdowns.html">Dropdowns</a>
+                <a class="nav-link px-4" href="forms.html">Forms</a>
+                <a class="nav-link px-4" href="gallery.html">Gallery</a>
+                <a class="nav-link px-4" href="icon-box.html">Icon box</a>
+                <a class="nav-link px-4" href="input-group.html">Input group</a>
+                <a class="nav-link px-4" href="list-group.html">List group</a>
+                <a class="nav-link px-4" href="modal.html">Modal</a>
+                <a class="nav-link px-4" href="navs.html">Navs</a>
+                <a class="nav-link px-4" href="navbar.html">Navbar</a>
+                <a class="nav-link px-4" href="offcanvas.html">Offcanvas</a>
+                <a class="nav-link px-4" href="pagination.html">Pagination</a>
+                <a class="nav-link px-4" href="parallax.html">Parallax</a>
+                <a class="nav-link px-4" href="pills.html">Pills</a>
+                <a class="nav-link px-4" href="popovers.html">Popovers</a>
+                <a class="nav-link px-4" href="portfolio-components.html">Portfolio components</a>
+                <a class="nav-link px-4" href="pricing.html">Pricing</a>
+                <a class="nav-link px-4" href="progress-bar.html">Progress bar</a>
+                <a class="nav-link px-4" href="progress-radial.html">Progress radial</a>
+                <a class="nav-link px-4" href="scrollbar-custom.html">Scrollbar (custom)</a>
+                <a class="nav-link px-4" href="shop-components.html">Shop components</a>
+                <a class="nav-link px-4" href="social-buttons.html">Social buttons</a>
+                <a class="nav-link px-4" href="spinners.html">Spinners</a>
+                <a class="nav-link px-4" href="steps.html">Steps</a>
+                <a class="nav-link px-4" href="tabs.html">Tabs</a>
+                <a class="nav-link px-4" href="team.html">Team</a>
+                <a class="nav-link px-4" href="testimonials.html">Testimonials / reviews</a>
+                <a class="nav-link px-4" href="toasts.html">Toasts</a>
+                <a class="nav-link px-4" href="tooltips.html">Tooltips</a>
+                <a class="nav-link px-4" href="video-popup.html">Video popup</a>
+                <a class="nav-link px-4" href="widgets.html">Widgets</a>
+              </nav>
+              <h6 class="fs-lg text-light px-4 pt-1 mt-4 mb-3">Utilities</h6>
+              <hr class="hr-gradient hr-light mt-0 mb-2 opacity-25">
+              <nav class="nav nav-light">
+                <a class="nav-link px-4" href="https://getbootstrap.com/docs/5.0/utilities/borders/" target="_blank" rel="noopener">Bootstrap</a>
+                <a class="nav-link px-4" href="utilities.html">Createx</a>
+              </nav>
+            </div>
+          </aside>
+          
+          <!-- Page title-->
+          <div class="border-bottom pt-5 mt-2 mb-5">
+            <h1 class="mt-2 mt-md-4 mb-3 pt-5">Icon font</h1>
+            <div class="d-flex flex-wrap flex-md-nowrap justify-content-between">
+              <p class="text-muted">Collection of vector icons in the format of font. To add icon simply apply css class listed under each icon to <code>&lt;i&gt;</code> or <code>&lt;span&gt;</code> tag.</p>
+              <div class="ps-md-4 mb-3"><span class="badge bg-success">Createx component</span></div>
+            </div>
+          </div>
+
+          <!-- Icon font-->
+          <section class="pb-5 mb-md-2" id="icon-font">
+            <h2 class="h3">Icon font</h2>
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-alert"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-alert</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-alert-octagon"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-alert-octagon</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-anchor"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-anchor</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-angle-down"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-angle-down</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-angle-left"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-angle-left</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-angle-right"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-angle-right</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-angle-up"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-angle-up</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-arrow-down"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-arrow-down</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-arrow-left"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-arrow-left</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-arrow-right"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-arrow-right</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-arrow-up"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-arrow-up</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-arrow-bottom-left"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-arrow-bottom-left</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-arrow-bottom-right"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-arrow-bottom-right</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-arrow-top-left"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-arrow-top-left</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-arrow-top-right"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-arrow-top-right</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-arrow-vertical"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-arrow-vertical</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-arrow-horizontal"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-arrow-horizontal</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-arrow-fluid-vertical"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-arrow-fluid-vertical</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-arrow-fluid-horizontal"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-arrow-fluid-horizontal</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-arrow-back"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-arrow-back</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-arrow-forward"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-arrow-forward</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-arrow-convert"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-arrow-convert</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-arrow-reload"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-arrow-reload</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-arrow-expand"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-arrow-expand</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-arrow-select"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-arrow-select</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-arrow-share"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-arrow-share</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-attach"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-attach</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-bag"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-bag</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-bag"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-bag</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-behance"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-behance</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-bell"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-bell</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-blocked"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-blocked</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-calendar"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-calendar</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-cart"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-cart</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-chat"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-chat</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-check"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-check</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-check-round"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-check-round</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-checkmark"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-checkmark</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-clock"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-clock</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-close-round"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-close-round</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-cloud-download"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-cloud-download</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-cloud-upload"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-cloud-upload</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-comment"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-comment</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-cross"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-cross</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-danger"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-danger</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-delete"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-delete</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-dislike"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-dislike</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-dribbble"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-dribbble</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-envelope-opened"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-envelope-opened</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-external-link"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-external-link</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-eye"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-eye</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-eye-closed"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-eye-closed</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-facebook"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-facebook</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-figma"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-figma</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-file-download"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-file-download</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-file-upload"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-file-upload</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-files"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-files</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-filter-1"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-filter-1</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-filter-2"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-filter-2</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-folder"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-folder</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-github"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-github</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-gitlab"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-gitlab</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-google"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-google</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-google-hangouts"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-google-hangouts</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-grid"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-grid</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-hanger"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-hanger</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-headset"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-headset</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-heart"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-heart</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-heart-filled"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-heart-filled</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-history"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-history</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-home"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-home</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-info"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-info</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-instagram"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-instagram</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-instagram-filled"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-instagram-filled</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-iphone"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-iphone</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-layouts"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-layouts</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-lifebuoy"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-lifebuoy</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-like"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-like</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-linkedin"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-linkedin</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-list"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-list</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-lock"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-lock</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-login"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-login</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-logout"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-logout</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-mail"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-mail</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-map-pin-outline"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-map-pin-outline</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-map-pin-solid"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-map-pin-solid</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-mention"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-mention</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-messenger"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-messenger</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-mic"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-mic</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-minus"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-minus</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-minus-round"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-minus-round</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-odnoklassniki"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-odnoklassniki</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-paypal"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-paypal</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-photo"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-photo</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-pinterest"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-pinterest</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-plane"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-plane</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-play"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-play</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-play-outline"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-play-outline</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-plus"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-plus</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-plus-round"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-plus-round</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-profile"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-profile</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-quote"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-quote</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-rss"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-rss</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-search"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-search</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-send"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-send</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-settings"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-settings</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-share"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-share</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-shield"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-shield</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-skype"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-skype</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-slack"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-slack</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-slack-filled"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-slack-filled</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-star"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-star</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-star-filled"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-star-filled</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-stripe"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-stripe</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-telegram"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-telegram</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-truck"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-truck</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-tumblr"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-tumblr</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-twitch"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-twitch</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-twitter"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-twitter</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-unlock"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-unlock</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-upload"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-upload</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-download"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-download</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-viber"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-viber</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-vimeo"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-vimeo</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-vkontakte"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-vkontakte</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-volume-off"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-volume-off</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-volume-off-outline"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-volume-off-outline</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-volume-on"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-volume-on</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-volume-on-outline"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-volume-on-outline</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-wallet"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-wallet</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-wechat"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-wechat</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-whatsapp"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-whatsapp</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-world"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-world</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-youtube"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-youtube</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-sidebar-left"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-sidebar-left</div>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-6 mb-4 text-center"><i class="h2 mb-3 fw-normal ci-sidebar-right"></i>
+                    <div class="border-top border-bottom mt-1 py-1">ci-sidebar-right</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <!-- Back to top button-->
+    <a class="btn-scroll-top" href="#top" data-scroll data-fixed-element>
+      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i class="btn-scroll-top-icon ci-angle-up"></i>
+    </a>
+
+    <!-- Vendor scripts: js libraries and plugins-->
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="../assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-core.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-markup.min.js"></script>
+    <script src="../assets/vendor/prismjs/components/prism-clike.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="../assets/vendor/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+    <!-- Main theme script-->
+    <script src="../assets/js/theme.min.js"></script>
+  </body>
+</html>
