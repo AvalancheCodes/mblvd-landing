@@ -4,7 +4,9 @@
   "description": "Createx - Multipurpose Bootstrap Template",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp",
+    "start": "node server.js"
   },
   "author": "https://createx.studio/",
   "license": "ISC",
@@ -13,7 +15,9 @@
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
     "browser-sync": "^2.27.4",
+    "compression": "~1.7.4",
     "del": "^6.0.0",
+    "express": "~4.18.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
