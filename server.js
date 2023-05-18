@@ -22,7 +22,7 @@ const firebaseUpdateStripeStatus = async (uid, status) => {
   });
 }
 
-app.set('trust proxy', 'loopback')
+app.set('trust proxy', true)
 
 app.use((req, res, next) => {
   if (force_https_redirect && !req.secure) {
