@@ -995,8 +995,9 @@
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({uid: uid, email: formData.email})
         })
-        const {redirect} = await checkoutResponse.json();
-        window.open(redirect, '_blank');
+        const checkoutResponseJson = await checkoutResponse.json();
+        window.location.href = checkoutResponseJson.redirect;
+        //window.open(redirect, '_blank');
 
         formRegister.reset();
         formRegister.classList.remove('was-validated');

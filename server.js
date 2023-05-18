@@ -60,13 +60,13 @@ app.post('/create-checkout-session', async (req, res) => {
 app.get('/callback-success/:uid', async (req, res) => {
   const {uid} = req.params;
   await firebaseUpdateStripeStatus(uid, "paid");
-  res.redirect(303, "/success");
+  res.redirect(303, "/");
 });
 
 app.get('/callback-cancel/:uid', async (req, res) => {
   const {uid} = req.params;
   await firebaseUpdateStripeStatus(uid, "cancelled");
-  res.redirect(303, "/cancel");
+  res.redirect(303, "/");
 });
 
 app.listen(port);
