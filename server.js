@@ -6,6 +6,7 @@ const stripe = require('stripe')(process.env.stripe_secret_key);
 const stripePriceId = process.env.stripe_price_id;
 const port = process.env.PORT || 8080;
 const firebase_admin_cert_text = process.env.admin_cert_text;
+const force_https_redirect = process.env.force_https_redirect === "true";
 
 const {initializeApp, getApp, cert,} = require('firebase-admin/app');
 const {getFirestore} = require("firebase-admin/firestore");
@@ -21,6 +22,13 @@ const firebaseUpdateStripeStatus = async (uid, status) => {
   });
 }
 
+
+app.use(async (req, res, next) => {
+  if (force_https_redirect && !req.secure) {
+    return res.redirect("https://" + req.headers.host + req.url);
+  }
+  next();
+})
 
 app.use(compression());
 app.use(express.static(__dirname));
