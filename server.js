@@ -24,6 +24,7 @@ const firebaseUpdateStripeStatus = async (uid, status) => {
 
 
 app.use(async (req, res, next) => {
+  throw new Error(`Test: ${req.headers.host}, ${req.url}, ${req.secure}, ${req.protocol}`)
   if (force_https_redirect && !req.secure) {
     return res.redirect("https://" + req.headers.host + req.url);
   }
