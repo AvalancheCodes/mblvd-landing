@@ -23,13 +23,13 @@ const firebaseUpdateStripeStatus = async (uid, status) => {
 }
 
 
-app.use(async (req, res, next) => {
+/*app.use(async (req, res, next) => {
   throw new Error(`Test: ${req.headers.host}, ${req.url}, ${req.secure}, ${req.protocol}`)
   if (force_https_redirect && !req.secure) {
     return res.redirect("https://" + req.headers.host + req.url);
   }
   next();
-})
+})*/
 
 app.use(compression());
 app.use(express.static(__dirname));
@@ -39,7 +39,7 @@ app.use(bodyParser.json())
 
 app.post('/create-checkout-session', async (req, res) => {
   const {uid, email} = req.body;
-  const url = `${req.protocol}://${req.headers.host}`;
+  const url = `https://${req.headers.host}`;
   const session = await stripe.checkout.sessions.create({
     customer_email: email,
     line_items: [
