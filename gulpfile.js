@@ -1,17 +1,17 @@
 "use strict";
 
 const gulp = require('gulp'),
-      rollup = require('gulp-rollup'),
-      del = require('del'),
-      rename = require('gulp-rename'),
-      sass = require('gulp-sass')(require('sass')),
-      autoprefixer = require('gulp-autoprefixer'),
-      sourcemaps = require('gulp-sourcemaps'),
-      browserSync = require('browser-sync').create(),
-      reload = browserSync.reload,
-      babel = require('gulp-babel'),
-      uglify = require('gulp-uglify'),
-      packageFile = require('./package.json');
+  rollup = require('gulp-rollup'),
+  del = require('del'),
+  rename = require('gulp-rename'),
+  sass = require('gulp-sass')(require('sass')),
+  autoprefixer = require('gulp-autoprefixer'),
+  sourcemaps = require('gulp-sourcemaps'),
+  browserSync = require('browser-sync').create(),
+  reload = browserSync.reload,
+  babel = require('gulp-babel'),
+  uglify = require('gulp-uglify'),
+  packageFile = require('./package.json');
 
 
 // Define reusable paths
@@ -64,7 +64,7 @@ gulp.task('sass:minified', () => {
     .pipe(autoprefixer({
       cascade: false
     }))
-    .pipe(rename({ suffix: '.min'}))
+    .pipe(rename({suffix: '.min'}))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(path.css))
     .pipe(browserSync.stream()); // Inject css into browser
@@ -140,7 +140,7 @@ gulp.task('vendor', () => {
     return key + '/**/*';
   });
   return gulp.src(libs, {cwd: 'node_modules', base: './node_modules'})
-  .pipe(gulp.dest(path.vendor));
+    .pipe(gulp.dest(path.vendor));
 });
 
 
@@ -177,5 +177,10 @@ gulp.task('watch', () => {
 
 gulp.task(
   'default',
+  gulp.series('clean', 'vendor', gulp.parallel('js:minified', 'js:expanded', 'sass:minified', 'sass:expanded'))
+);
+
+gulp.task(
+  'dev',
   gulp.series('clean', 'vendor', gulp.parallel('js:minified', 'js:expanded', 'sass:minified', 'sass:expanded'), 'watch')
 );
